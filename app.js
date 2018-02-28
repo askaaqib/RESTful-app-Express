@@ -4,10 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('mongodb://127.0.0.1:27017/closebrace');
+var db = monk('mongodb://admin:admin@ds151558.mlab.com:51558/closebrace');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
